@@ -39,7 +39,7 @@ public class PessoaService {
 		
 	}
 
-	private Pessoa buscaPessoaPorId(Long codigo) {
+	public Pessoa buscaPessoaPorId(Long codigo) {
 		Pessoa pessoaSalva  = pessoaRepository.findOne(codigo);
 		
 		if (pessoaSalva == null) {
