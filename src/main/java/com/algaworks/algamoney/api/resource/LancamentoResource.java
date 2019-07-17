@@ -48,7 +48,7 @@ public class LancamentoResource {
 	@Autowired
 	private MessageSource messageSource;
 	
-	@GetMapping()
+	@GetMapping
 	public Page<Lancamento> pesquisar(LancamentoFilter lancamentoFilter, Pageable pageable){
 		return lancamentoRepository.filtrar(lancamentoFilter, pageable);
 	}
